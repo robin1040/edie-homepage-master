@@ -1,0 +1,102 @@
+@import '_variables';
+
+#services{
+    margin-top: 40px;
+    margin-left: 40px;
+    h2{
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 36px;
+        width: 259px;
+        height: 72px;
+    }
+    .container-services{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        align-content: center;
+        .item-services{
+            background-color:$color-gray-cards;
+            border-radius: 18px;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 40px;
+            margin-top: 40px;
+            .img-span{
+                border-radius: 12px;
+                width: 67px;
+                height: 67px;
+                background-color: $color-blue;
+                text-align: center;
+                span{
+                    padding-top: 15px;
+                    font-size: 40px;
+                    color: $color-white;
+                }
+            }
+            .color-green{
+                background-color: $color-greed;
+            }
+            .color-red{
+                background-color: $color-red;
+            }
+            h3{
+                font-size: 24px;
+                font-weight: 800;
+                margin-top: 35px;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #4F4F4F;
+                margin-top: 24px;
+            }
+            button{
+                margin-top: 30px;
+                width: 116px;
+                height: 42px;
+                background-color: #c7c4c4;
+                border: none;
+                border-radius: 12px;
+                color: $color-gray;
+                font-weight: 700;
+            }
+            button:hover{
+                background-color: $color-blue;
+                color: $color-white;
+            }
+            .button-red:hover{
+                background-color: $color-red;
+                color: $color-white;
+            }
+            .button-green:hover{
+                background-color: $color-greed;
+                color: $color-white;
+            }
+        }
+        .item-services:hover{
+            background-color: $color-white;
+            box-shadow: 0 10px 30px rgba(51, 51, 51, 0.1);
+        }
+    }
+}
+
+@media (min-width:720px) {
+    #services{
+        margin-top: 200px;
+        h2{
+            margin-left: 165px;
+            font-size: 36px;
+            width: 366px;
+            line-height: 54px;
+        }
+        .container-services{
+            flex-direction: row;
+            gap: 40px;
+            width: 90vw;
+            margin: 42px auto 0 auto;
+        }
+    }
+}
+

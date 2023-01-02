@@ -1,0 +1,103 @@
+@import '_variables';
+
+.introduction{
+    margin-top: 22px;
+    margin-left: 40px;
+    text-align: justify;
+    h2{
+        width: 225px;
+        height: 58px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+    p{
+        margin-top: 33px;
+        width: 275px;
+        height: 74px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #4F4F4F;
+        font-weight: 400;
+    }
+}
+
+.container-info{
+/*     margin: 0 auto; */
+    margin-left: 40px;
+    width: 291px;
+    height: 68px;
+    h5{
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 15px;
+    }
+}
+.button-contact{
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    width: 291px;
+    border-radius: 12px;
+    height: 47px;
+    padding: 4px;
+    input{
+        padding-left: 20px;
+        padding-top: 7px;
+        flex-grow: 2;
+        border: none;
+        width: 147px;
+        height: 26px;
+        background-color: #F2F2F2;
+    }
+    input:focus{
+        outline: none;
+    }
+    button{
+        border: none;
+        background: $color-blue;
+        color: $color-white;
+        width: 71px;
+        height: 39px;
+        border-radius: 12px;
+    }
+}
+
+@media (min-width:820px) {
+    .introduction{
+        margin-left: 177px;
+        h2{
+            width: 366px;
+            height: 141px;
+            font-size: 48px;
+            line-height: 70px;
+        }
+        p{
+            width: 366px;
+            height: 137px;
+            font-size: 18px;
+            line-height: 27px;
+        }
+    }
+    .container-info{
+        /*     margin: 0 auto; */
+            margin-left: 177px;
+            h5{
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 15px;
+            }
+        }
+    .button-contact{
+        width: 366px;
+    }
+
+}
+@media (min-width:980px) {
+    .introduction{
+        margin-left: 277px;
+    }
+    .container-info{
+            margin-left: 277px;
+    }
+}
